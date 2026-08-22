@@ -1,0 +1,4 @@
+def calculate_fees(profit):
+    mgmt_fee = 0.02 / 12
+    perf_fee = max(0, profit * 0.20)
+    return mgmt_fee, perf_fee

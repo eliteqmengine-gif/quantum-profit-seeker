@@ -1,0 +1,13 @@
+class Broker:
+    def execute(self, order):
+        pass
+
+class OandaBroker(Broker):
+    def execute(self, order):
+        # OANDA API call
+        pass
+
+class BinanceBroker(Broker):
+    def execute(self, order):
+        # Crypto execution
+        pass

@@ -1,0 +1,3 @@
+- alert: HighDrawdown
+  expr: bot_drawdown < -0.1
+  for: 1m

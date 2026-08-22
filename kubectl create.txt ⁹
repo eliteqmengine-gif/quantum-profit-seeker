@@ -1,0 +1,2 @@
+kubectl create secret generic oanda-secret \
+  --from-literal=api_key=YOUR_KEY

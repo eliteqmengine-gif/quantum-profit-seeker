@@ -1,0 +1,12 @@
+import redis
+
+r = redis.Redis()
+
+def publish_event(event):
+    r.xadd("trades_stream", event)
+
+def consume_events():
+    events = r.xread({"trades_stream": "0"})
+    for stream, msgs in events:
+        for msg_id, data in msgs:
+            process_trade(data)

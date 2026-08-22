@@ -1,0 +1,7 @@
+@app.get("/nav")
+def get_nav():
+    return {
+        "nav": current_nav,
+        "return": total_return,
+        "drawdown": max_dd
+    }

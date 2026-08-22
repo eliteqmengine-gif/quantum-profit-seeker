@@ -1,0 +1,7 @@
+def detect_regime(volatility, trend):
+    if volatility > 0.02:
+        return "high_vol"
+    elif trend > 0:
+        return "bull"
+    else:
+        return "bear"

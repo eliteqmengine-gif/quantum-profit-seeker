@@ -1,0 +1,6 @@
+CREATE TABLE ticks (
+    time TIMESTAMPTZ,
+    symbol TEXT,
+    price DOUBLE PRECISION,
+    volume DOUBLE PRECISION
+);
